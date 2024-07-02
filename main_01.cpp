@@ -36,6 +36,17 @@ int main()
     compiler.set_shaders({"shader.comp"});
 
     compiler.inherit_descriptor_set(0, {VK_NULL_HANDLE});
+    compiler.inherit_descriptor_set(1, {VK_NULL_HANDLE});
+
+    compiler.write_descriptor_resource("mat_UBO", VkDescriptorBufferInfo{} /* 0 */);
+
+    const Program program = compiler.compile();
+
+    compiler.write_descriptor_resource("frame_UBO", VkDescriptorBufferInfo{} /* 1 */);
+
+
+
+
 
     compiler.write_descriptor_resource("resource_name_0", {VkDescriptorBufferInfo{}});
     compiler.write_descriptor_resource("resource_name_1", {VkDescriptorBufferInfo{}});

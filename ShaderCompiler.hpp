@@ -96,7 +96,9 @@ private:
     const VkPipeline vk_handle_pipeline {VK_NULL_HANDLE};
     const VkPipelineLayout vk_handle_pipeline_layout {VK_NULL_HANDLE};
     const VkPipelineBindPoint vk_pipeline_bind_point {VK_PIPELINE_BIND_POINT_MAX_ENUM};
+
     const std::vector<std::vector<VkDescriptorSet>> m_vk_handle_desc_set_vec;
+
 public:
     Program() = default;
 
@@ -171,6 +173,7 @@ public:
     void inherit_descriptor_set(uint32_t set, std::vector<VkDescriptorSet> vk_handle_desc_set_vec);
 
     void write_descriptor_resource(const std::string& resource_name, const std::vector<VkDescriptorBufferInfo>& desc_info, uint32_t array_idx = 0u);
+    void write_descriptor_resource(const std::string& resource_name, const VkDescriptorBufferInfo& desc_info);
 
     Program compile();
 };
@@ -220,6 +223,12 @@ void Compiler_ComputeProgram::set_shaders(const std::vector<std::string>& shader
         // Merge Shader Reflection with Program Reflection
         // merge_reflections(std::move(shader_reflection_omap), program_reflection_omap);
     }
+}
+
+
+void Compiler_ComputeProgram::write_descriptor_resource(const std::string& resource_name, const VkDescriptorBufferInfo& desc_info)
+{
+
 }
 
 void Compiler_ComputeProgram::write_descriptor_resource(const std::string& resource_name, const std::vector<VkDescriptorBufferInfo>& desc_info, uint32_t array_idx)
