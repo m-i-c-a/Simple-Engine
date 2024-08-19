@@ -4,12 +4,12 @@
             "name": "Linux",
             "includePath": [
                 "${workspaceFolder}/**",
-                "${env:VULKAN_SDK}/include/"
+                "${env:VULKAN_SDK}/include"
             ],
             "defines": [],
-            "compilerPath": "/usr/bin/g++-11",
+            "compilerPath": "/usr/bin/gcc",
             "cStandard": "c17",
-            "cppStandard": "gnu++20",
+            "cppStandard": "gnu++17",
             "intelliSenseMode": "linux-gcc-x64"
         }
     ],

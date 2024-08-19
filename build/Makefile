@@ -117,41 +117,69 @@ depend:
 .PHONY : depend
 
 #=============================================================================
-# Target rules for targets named test
+# Target rules for targets named vk_core
 
 # Build rule for target.
-test: cmake_check_build_system
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 test
-.PHONY : test
+vk_core: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vk_core
+.PHONY : vk_core
 
 # fast build rule for target.
-test/fast:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/build
-.PHONY : test/fast
+vk_core/fast:
+	$(MAKE) $(MAKESILENT) -f common/vk_core/CMakeFiles/vk_core.dir/build.make common/vk_core/CMakeFiles/vk_core.dir/build
+.PHONY : vk_core/fast
 
-main_00.o: main_00.cpp.o
-.PHONY : main_00.o
+#=============================================================================
+# Target rules for targets named imgui_wrapper
 
-# target to build an object file
-main_00.cpp.o:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main_00.cpp.o
-.PHONY : main_00.cpp.o
+# Build rule for target.
+imgui_wrapper: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 imgui_wrapper
+.PHONY : imgui_wrapper
 
-main_00.i: main_00.cpp.i
-.PHONY : main_00.i
+# fast build rule for target.
+imgui_wrapper/fast:
+	$(MAKE) $(MAKESILENT) -f common/imgui_wrapper/CMakeFiles/imgui_wrapper.dir/build.make common/imgui_wrapper/CMakeFiles/imgui_wrapper.dir/build
+.PHONY : imgui_wrapper/fast
 
-# target to preprocess a source file
-main_00.cpp.i:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main_00.cpp.i
-.PHONY : main_00.cpp.i
+#=============================================================================
+# Target rules for targets named clear_screen
 
-main_00.s: main_00.cpp.s
-.PHONY : main_00.s
+# Build rule for target.
+clear_screen: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 clear_screen
+.PHONY : clear_screen
 
-# target to generate assembly for a file
-main_00.cpp.s:
-	$(MAKE) $(MAKESILENT) -f CMakeFiles/test.dir/build.make CMakeFiles/test.dir/main_00.cpp.s
-.PHONY : main_00.cpp.s
+# fast build rule for target.
+clear_screen/fast:
+	$(MAKE) $(MAKESILENT) -f 00_clear_screen/CMakeFiles/clear_screen.dir/build.make 00_clear_screen/CMakeFiles/clear_screen.dir/build
+.PHONY : clear_screen/fast
+
+#=============================================================================
+# Target rules for targets named gui
+
+# Build rule for target.
+gui: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 gui
+.PHONY : gui
+
+# fast build rule for target.
+gui/fast:
+	$(MAKE) $(MAKESILENT) -f 01_gui/CMakeFiles/gui.dir/build.make 01_gui/CMakeFiles/gui.dir/build
+.PHONY : gui/fast
+
+#=============================================================================
+# Target rules for targets named vsync
+
+# Build rule for target.
+vsync: cmake_check_build_system
+	$(MAKE) $(MAKESILENT) -f CMakeFiles/Makefile2 vsync
+.PHONY : vsync
+
+# fast build rule for target.
+vsync/fast:
+	$(MAKE) $(MAKESILENT) -f __vsync/CMakeFiles/vsync.dir/build.make __vsync/CMakeFiles/vsync.dir/build
+.PHONY : vsync/fast
 
 # Help Target
 help:
@@ -161,10 +189,11 @@ help:
 	@echo "... depend"
 	@echo "... edit_cache"
 	@echo "... rebuild_cache"
-	@echo "... test"
-	@echo "... main_00.o"
-	@echo "... main_00.i"
-	@echo "... main_00.s"
+	@echo "... clear_screen"
+	@echo "... gui"
+	@echo "... imgui_wrapper"
+	@echo "... vk_core"
+	@echo "... vsync"
 .PHONY : help
 
 

@@ -1,0 +1,1 @@
+/usr/bin/c++ -rdynamic CMakeFiles/clear_screen.dir/00_clear_screen/main.cpp.o -o clear_screen  -Wl,-rpath,/home/mica/Downloads/Vulkan/1.3.283.0/x86_64/lib vk_core/libvk_core.a /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 /home/mica/Downloads/Vulkan/1.3.283.0/x86_64/lib/libvulkan.so 

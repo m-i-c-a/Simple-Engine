@@ -1,0 +1,1 @@
+/usr/bin/c++ -g -rdynamic CMakeFiles/gui.dir/main.cpp.o -o gui  -Wl,-rpath,/home/mica/Downloads/Vulkan/1.3.283.0/x86_64/lib ../common/vk_core/libvk_core.a ../common/imgui_wrapper/libimgui_wrapper.a /usr/lib/x86_64-linux-gnu/libglfw.so.3.3 ../common/vk_core/libvk_core.a /home/mica/Downloads/Vulkan/1.3.283.0/x86_64/lib/libvulkan.so 

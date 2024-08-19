@@ -1,0 +1,3 @@
+add_executable(clear_screen ${CMAKE_CURRENT_SOURCE_DIR}/main.cpp)
+target_include_directories(clear_screen PRIVATE vk_core_INCLUDE_DIRS)
+target_link_libraries(clear_screen PRIVATE vk_core glfw)

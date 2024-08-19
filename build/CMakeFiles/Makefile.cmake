@@ -7,10 +7,20 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "../00_clear_screen/CMakeLists.txt"
+  "../01_gui/CMakeLists.txt"
   "../CMakeLists.txt"
+  "../__vsync/CMakeLists.txt"
   "CMakeFiles/3.22.1/CMakeCCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.22.1/CMakeSystem.cmake"
+  "../common/CMakeLists.txt"
+  "../common/imgui_wrapper/CMakeLists.txt"
+  "../common/vk_core/CMakeLists.txt"
+  "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Config.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3ConfigVersion.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets-none.cmake"
+  "/usr/lib/x86_64-linux-gnu/cmake/glfw3/glfw3Targets.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCXXInformation.cmake"
   "/usr/share/cmake-3.22/Modules/CMakeCommonLanguageInclude.cmake"
@@ -39,9 +49,19 @@ set(CMAKE_MAKEFILE_OUTPUTS
 # Byproducts of CMake generate step:
 set(CMAKE_MAKEFILE_PRODUCTS
   "CMakeFiles/CMakeDirectoryInformation.cmake"
+  "common/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "common/vk_core/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "common/imgui_wrapper/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "00_clear_screen/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "01_gui/CMakeFiles/CMakeDirectoryInformation.cmake"
+  "__vsync/CMakeFiles/CMakeDirectoryInformation.cmake"
   )
 
 # Dependency information for all targets:
 set(CMAKE_DEPEND_INFO_FILES
-  "CMakeFiles/test.dir/DependInfo.cmake"
+  "common/vk_core/CMakeFiles/vk_core.dir/DependInfo.cmake"
+  "common/imgui_wrapper/CMakeFiles/imgui_wrapper.dir/DependInfo.cmake"
+  "00_clear_screen/CMakeFiles/clear_screen.dir/DependInfo.cmake"
+  "01_gui/CMakeFiles/gui.dir/DependInfo.cmake"
+  "__vsync/CMakeFiles/vsync.dir/DependInfo.cmake"
   )

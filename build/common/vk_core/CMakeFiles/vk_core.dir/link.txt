@@ -1,0 +1,2 @@
+/usr/bin/ar qc libvk_core.a CMakeFiles/vk_core.dir/src/vk_core.cpp.o
+/usr/bin/ranlib libvk_core.a
